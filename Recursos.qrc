@@ -1,0 +1,16 @@
+<RCC>
+    <qresource prefix="/imagenes">
+        <file>Recursos/calculator-1.png</file>
+        <file>Recursos/document.png</file>
+        <file>Recursos/exit-1.png</file>
+        <file>Recursos/folder-10.png</file>
+        <file>Recursos/info.png</file>
+        <file>Recursos/salario.png</file>
+        <file>Recursos/save.png</file>
+    </qresource>
+    <qresource prefix="/traducciones">
+        <file>Traducciones/Qt_Salario-02_en_US.qm</file>
+        <file>Traducciones/Qt_Salario-02_es_EC.qm</file>
+        <file>Traducciones/Qt_Salario-02_ru_RU.qm</file>
+    </qresource>
+</RCC>
