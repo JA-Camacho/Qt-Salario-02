@@ -45,6 +45,21 @@ Net Salary: $%4
 <context>
     <name>Obrero</name>
     <message>
+        <location filename="obrero.cpp" line="24"/>
+        <source>Vespertina</source>
+        <translation>Evening</translation>
+    </message>
+    <message>
+        <location filename="obrero.cpp" line="27"/>
+        <source>Matutina</source>
+        <translation>Morning</translation>
+    </message>
+    <message>
+        <location filename="obrero.cpp" line="30"/>
+        <source>Nocturna</source>
+        <translation>Night</translation>
+    </message>
+    <message>
         <location filename="obrero.cpp" line="38"/>
         <source>Obrero %1
 Horas: %2
@@ -61,6 +76,8 @@ Workday: %3
     <message>
         <location filename="principal.ui" line="14"/>
         <location filename="principal.cpp" line="43"/>
+        <location filename="principal.cpp" line="108"/>
+        <location filename="principal.cpp" line="141"/>
         <source>Salarios</source>
         <translation>Salary</translation>
     </message>
@@ -180,6 +197,33 @@ Workday: %3
         <location filename="principal.cpp" line="59"/>
         <source>%1</source>
         <translation>%1</translation>
+    </message>
+    <message>
+        <location filename="principal.cpp" line="97"/>
+        <source>Guardar archivo</source>
+        <translation>Save File</translation>
+    </message>
+    <message>
+        <location filename="principal.cpp" line="97"/>
+        <location filename="principal.cpp" line="128"/>
+        <source>Archivo de texto(*.txt)</source>
+        <translation>Text file(*.txt)</translation>
+    </message>
+    <message>
+        <location filename="principal.cpp" line="108"/>
+        <location filename="principal.cpp" line="141"/>
+        <source>No se puede abrir el archivo</source>
+        <translation>Cannot open the file</translation>
+    </message>
+    <message>
+        <location filename="principal.cpp" line="116"/>
+        <source>Archivo guardado en %1</source>
+        <translation>File saved in %1</translation>
+    </message>
+    <message>
+        <location filename="principal.cpp" line="128"/>
+        <source>Abrir</source>
+        <translation>Open</translation>
     </message>
 </context>
 </TS>

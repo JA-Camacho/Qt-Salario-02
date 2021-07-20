@@ -21,13 +21,13 @@ QString Obrero::getJornada()
     switch(jornada())
     {
     case 'V':
-        str = "Vespertina";
+        str = tr("Vespertina");
         break;
     case 'M':
-        str = "Matutina";
+        str = tr("Matutina");
         break;
     case 'N':
-        str = "Nocturna";
+        str = tr("Nocturna");
         break;
     }
     return str;

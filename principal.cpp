@@ -91,10 +91,10 @@ void Principal::on_actionGuardar_triggered()
     QDir directorio = QDir::home();
 
     //Agregar al path absoluto del objeto un nombre por defecto del archivo
-    QString pathArchivo = directorio.absolutePath() + "/sin_nombre.txt";
+    QString pathArchivo = directorio.absolutePath();
 
     //Abrir un cuadro de dialogo para seleccionar el nombre y ubicacion del archivo a guardar
-    QString fileName = QFileDialog::getSaveFileName(this, "Guardar archivo", pathArchivo, "Archivo de texto(*.txt)");
+    QString fileName = QFileDialog::getSaveFileName(this, tr("Guardar archivo"), pathArchivo, tr("Archivo de texto(*.txt)"));
 
     //Crear el archivo a partir del nombre arrojado por el cuadro de dialogo
     QFile f(fileName);
@@ -105,7 +105,7 @@ void Principal::on_actionGuardar_triggered()
     //Intentar abrir el archivo ya sea para escribir(si no existe) o para agregar texto(si existe)
     if(!f.open(QIODevice::WriteOnly | QIODevice::Append))
     {
-        QMessageBox::warning(this, "Salarios", "No se puede abrir el archivo");
+        QMessageBox::warning(this, tr("Salarios"), tr("No se puede abrir el archivo"));
         return;
     }
     //Guardar el contenido
@@ -113,7 +113,7 @@ void Principal::on_actionGuardar_triggered()
     f.close();
 
     //mostrar mensage en la barra de estado
-    ui->statusbar->showMessage("Archivo guardado en " + fileName, 3000);
+    ui->statusbar->showMessage(tr("Archivo guardado en %1").arg(fileName), 3000);
 }
 
 void Principal::on_actionAbrir_triggered()
@@ -125,7 +125,7 @@ void Principal::on_actionAbrir_triggered()
     QString pathArchivo = directorio.absolutePath();
 
     //Abrir un cuadro de dialogo para seleccionar el nombre y ubicacion del archivo a guardar
-    QString file = QFileDialog::getOpenFileName(this, "Abrir", pathArchivo, "Archivo de texto(*.txt)");
+    QString file = QFileDialog::getOpenFileName(this, tr("Abrir"), pathArchivo, tr("Archivo de texto(*.txt)"));
 
     //Crear el archivo a partir del nombre arrojado por el cuadro de dialogo
     QFile f(file);
@@ -138,7 +138,7 @@ void Principal::on_actionAbrir_triggered()
 
     //Intentar abrir el archivo para leer(si no existe)
     if(!f.open(QIODevice::ReadOnly))
-        QMessageBox::warning(this, "Salarios", "No se puede abrir el archivo");
+        QMessageBox::warning(this, tr("Salarios"), tr("No se puede abrir el archivo"));
 
     while(!in.atEnd()){
         //Guardar la información del archivo en la variable "información"

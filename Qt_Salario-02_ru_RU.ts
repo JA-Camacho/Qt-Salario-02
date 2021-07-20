@@ -45,6 +45,21 @@ Salario Neto: $%4</oldsource>
 <context>
     <name>Obrero</name>
     <message>
+        <location filename="obrero.cpp" line="24"/>
+        <source>Vespertina</source>
+        <translation>Вечер</translation>
+    </message>
+    <message>
+        <location filename="obrero.cpp" line="27"/>
+        <source>Matutina</source>
+        <translation>Утро</translation>
+    </message>
+    <message>
+        <location filename="obrero.cpp" line="30"/>
+        <source>Nocturna</source>
+        <translation>По ночам</translation>
+    </message>
+    <message>
         <location filename="obrero.cpp" line="38"/>
         <source>Obrero %1
 Horas: %2
@@ -61,6 +76,8 @@ Jornada: %3
     <message>
         <location filename="principal.ui" line="14"/>
         <location filename="principal.cpp" line="43"/>
+        <location filename="principal.cpp" line="108"/>
+        <location filename="principal.cpp" line="141"/>
         <source>Salarios</source>
         <translation>Оплата труда</translation>
     </message>
@@ -180,6 +197,33 @@ Jornada: %3
         <location filename="principal.cpp" line="59"/>
         <source>%1</source>
         <translation>%1</translation>
+    </message>
+    <message>
+        <location filename="principal.cpp" line="97"/>
+        <source>Guardar archivo</source>
+        <translation>Сохранить файл</translation>
+    </message>
+    <message>
+        <location filename="principal.cpp" line="97"/>
+        <location filename="principal.cpp" line="128"/>
+        <source>Archivo de texto(*.txt)</source>
+        <translation>Текстовый файл(*.txt)</translation>
+    </message>
+    <message>
+        <location filename="principal.cpp" line="108"/>
+        <location filename="principal.cpp" line="141"/>
+        <source>No se puede abrir el archivo</source>
+        <translation>Не могу открыть файл</translation>
+    </message>
+    <message>
+        <location filename="principal.cpp" line="116"/>
+        <source>Archivo guardado en %1</source>
+        <translation>Файл сохранен в %1</translation>
+    </message>
+    <message>
+        <location filename="principal.cpp" line="128"/>
+        <source>Abrir</source>
+        <translation>Открыть</translation>
     </message>
 </context>
 </TS>
